@@ -6,15 +6,18 @@ class Solution:
         array_length = len(arr)
         length = 0
         new_array = []
+        final_arr = []
         
         for i in range(array_length):
             if(arr[i] == 0):
                 new_array.append(arr[i])
                 new_array.append(0)
                 length += 2  
-                print(new_array)
             else: 
                 new_array.append(arr[i])
                 length += 1
         
-        return new_array
+        for i in range(array_length):
+            arr[i] = new_array[i]
+        
+        return arr
