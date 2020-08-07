@@ -8,7 +8,6 @@ You may assume that nums1 has enough space (size that is equal to m + n) to hold
 Unfortunately had to reference the solutions for this question
 '''
 
-
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
