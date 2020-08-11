@@ -29,3 +29,28 @@ class Solution:
             nums[i] = 0
         
         return nums 
+
+'''
+SOLUTION 2
+'''
+
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+
+        anchor = 0
+        length = len(nums)
+
+        for iterator in range(length):
+
+            if nums[iterator] != 0:
+                #temp = nums[anchor]
+                #nums[anchor] = nums[iterator]
+                #nums[iterator] = temp
+                nums[iterator], nums[anchor] = nums[anchor], nums[iterator]
+                anchor += 1
+        
+        return nums
+            
+            
+
+
