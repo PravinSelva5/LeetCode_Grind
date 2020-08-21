@@ -46,7 +46,7 @@ class MyCircularQueue:
         Get the last item from the queue.
         """
         if self.counter == 0:
-            return 1
+            return -1
         return self.queue[(self.front + self.counter - 1) % self.capacity]
         
 
