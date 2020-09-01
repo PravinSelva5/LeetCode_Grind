@@ -13,13 +13,17 @@ class Solution:
         length = len(nums) 
         index = 0
         
-        for i in range(1,length):
+        if length == 0:
+            return -1
+        
+        for i in range(length):
             left_sum = sum(nums[:i])
             right_sum = sum(nums[i+1:])
             
             if right_sum == left_sum:
                 index = i
                 return index
+            else:
+                index = -1
         
-        if index ==  0:
-            return -1
+        return index
