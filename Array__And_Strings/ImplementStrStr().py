@@ -27,10 +27,12 @@ SOLUTION 2: If you can't use python's find function
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         
-        # Edge Case
-        
+        # Edge Cases
         if needle not in haystack:
             return -1
+        
+        if needle == "":
+            return 0
         
         # Initializing indexes
         len_haystack = len(haystack)
@@ -41,5 +43,6 @@ class Solution:
         for i in range(len_haystack - len_needle + 1):
             if needle == haystack[i:i+len_needle]:
                 return i
+                
                 
 
