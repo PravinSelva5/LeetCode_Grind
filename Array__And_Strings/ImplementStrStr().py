@@ -43,6 +43,4 @@ class Solution:
         for i in range(len_haystack - len_needle + 1):
             if needle == haystack[i:i+len_needle]:
                 return i
-                
-                
-
+        
