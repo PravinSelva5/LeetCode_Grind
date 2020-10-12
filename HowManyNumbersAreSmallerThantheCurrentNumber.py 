@@ -1,0 +1,21 @@
+
+class Solution:
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        # Set an empty array
+        occurences = []
+        counter = 0
+        
+        # iterate through given loop
+        for i in range(len(nums)):
+            
+            # iterate again to compare other values to current num
+            
+            for numbers in range(len(nums)):
+                
+                if nums[i] > nums[numbers]:
+                    counter += 1
+            
+            occurences.append(counter)
+            counter = 0
+        
+        return occurences
