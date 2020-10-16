@@ -17,7 +17,6 @@ class Solution:
         
         iterator = 0
         output_array = []
-        temp = []
         
         for number in nums:
             
