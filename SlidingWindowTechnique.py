@@ -13,7 +13,7 @@ def maxSum(arr, WindowSize):
     # To compute the new sum, we remove (subtract) the first element in the previous window AND add the second element in the NEW WINDOW
 
     for i in range(arraySize-WindowSize):
-        window_sum = window_sum - arr[i] + arr[i + WindowSize]
+        window_sum = window_sum - arr[i] + arr[i + WindowSize]   # This is where you subtract the first element from the previous window and ADD the second element of the NEW WINDOW
         max_sum = max(window_sum, max_sum)
 
 
