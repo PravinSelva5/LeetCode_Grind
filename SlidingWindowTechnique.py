@@ -1,6 +1,20 @@
 # It is an optimization technique.
 # Given an array of integers of size N, find maximum sum of K consecutive elements
 
+
+'''
+USEFUL FOR:
+    - Things we iterate over sequentially
+        - Look for words such as contiguous, fixed sized
+        - Strings, arrays, linked-lists
+    - Minimum, maximum, longest, shortest, contained with a specific set
+        - maybe we need to calculate something
+        
+
+
+
+'''
+
 def maxSum(arr, WindowSize):
     arraySize = len(arr)
     if( arraySize <= WindowSize):
