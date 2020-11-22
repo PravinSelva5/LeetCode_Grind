@@ -54,3 +54,25 @@ class Solution:
             
 
 
+'''
+Time Complexity = O(2N) = O(N)
+Space Complexity = O(N)
+
+
+ANOTHER IMPLEMENTATION
+
+11/21/2020 19:06	Accepted	44 ms	15.5 MB	python3
+
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        anchor = 0
+        n = len(nums)
+        
+        for num in nums:
+            if num != 0:
+                nums[anchor] = num
+                anchor += 1
+        
+        for zero in range(anchor,n):
+            nums[zero] = 0
+'''
