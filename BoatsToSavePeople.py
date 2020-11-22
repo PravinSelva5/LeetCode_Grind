@@ -52,4 +52,13 @@ class Solution:
         
         return min_number_of_boats
 
-S = solution
+s = Solution()
+
+# [2,1,3,4]    limit = 4
+# [1,2,3,4]
+# [4]
+# [1,3]
+# [2]
+answer = s.numRescueBoats([2,1,3,4], 4)
+print(answer)
+
