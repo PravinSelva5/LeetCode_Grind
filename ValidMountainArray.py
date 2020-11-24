@@ -6,6 +6,7 @@ Given an array of integers arr, return true if and only if it is a valid mountai
 Runtime: 196 ms, faster than 69.14`%` of Python3 online submissions for Valid Mountain Array.
 Memory Usage: 15.5 MB, less than 8.92`%` of Python3 online submissions for Valid Mountain Array.
 '''
+from typing import List
 class Solution:
     def validMountainArray(self, arr: List[int]) -> bool:
         # Time Complexity: O(N)
@@ -31,3 +32,7 @@ class Solution:
             
         # Check to see if iterator made it to the end of the given array
         return iterator == len(arr)
+
+s = Solution()
+answer = s.validMountainArray([1,1,2,3,1,1])
+print(answer)
