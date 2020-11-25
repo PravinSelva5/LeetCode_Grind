@@ -7,6 +7,9 @@ Runtime: 60 ms, faster than 69.05% of Python3 online submissions for Longest Sub
 Memory Usage: 14.4 MB, less than 5.93% of Python3 online submissions for Longest Substring Without Repeating Characters.
 
  11/25/2020 11:23	Accepted	60 ms	14.4 MB	python3
+
+ TIME COMPLEXITY O(N)
+ SPACE COMPLEXITY O(N)
 '''
 
 from typing import List
