@@ -6,15 +6,14 @@ Count the number of prime numbers less than a non-negative number, n.
 
 Runtime: 364 ms, faster than 84.25% of Python3 online submissions for Count Primes.
 Memory Usage: 25.7 MB, less than 53.34% of Python3 online submissions for Count Primes.
+
+Use Sieve of Eratosthenes:  
+        - define a boolean array of size n & set elements to True except 0 and 1
 '''
 import math
 
 class Solution:
     def countPrimes(self, n: int) -> int:
-        '''
-        Use Sieve of Eratosthenes:  
-                    - define a boolean array of size n & set elements to True except 0 and 1
-        '''
         
         # If input number is less than 2
         if n < 2:
