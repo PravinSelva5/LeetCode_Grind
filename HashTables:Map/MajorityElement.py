@@ -25,5 +25,5 @@ class Solution:
         # Loop through map and find the value with occurences > n/2
         for occurence in nums:
             
-            if occurences[occurence] > len(nums) /2:
+            if occurences[occurence] > len(nums) / 2:
                 return occurence
