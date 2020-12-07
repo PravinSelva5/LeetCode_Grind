@@ -18,7 +18,7 @@ class Solution:
     def firstBadVersion(self, n):
         """
         :type n: int
-        :rtype: int
+        :rtype: int˚†
         """
         start_ptr = 1
         end_ptr = n
