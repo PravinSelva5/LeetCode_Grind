@@ -12,10 +12,12 @@ Space Complexity: O(1)
 '''
 
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+     def __init__(self, val=0, next=None):
+         self.val = val
+         self.next = next
+
+
 class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         # Utilize the fact that the lists are sorted
@@ -46,5 +48,26 @@ class Solution:
             l2 = l2.next
             current = current.next
             
-       
         return answer.next
+
+s = Solution()
+
+l1_1 = ListNode(1)
+l1_2 = ListNode(2)
+l1_4 = ListNode(4)
+
+l1_1.next = l1_2
+l1_2.next = l1_4
+
+l2_1 = ListNode(1)
+l2_3 = ListNode(3)
+l2_4 = ListNode(4)
+
+l2_1.next =l2_3
+l2_3.next = l2_4
+
+answer = s.mergeTwoLists(l1_1, l2_1)
+
+while answer is not None:
+    print(answer.val)
+    answer = answer.next
