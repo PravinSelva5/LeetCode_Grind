@@ -200,7 +200,15 @@ class DoublyLinkedList:
             temp = temp.next
             pointer += 1
         
-        prevNode
+        prevNode = temp
+        nodeAtTarget = temp.next
+        nextNode = nodeAtTarget.next
+
+        # connect previous node with next node, to remove target node out of the linked list
+        nextNode.prev = prevNode
+        prevNode.next = nextNode
+
+        return self.head
 
 
 # Node structure to be: 5 => 1 => 3 => 7
@@ -226,5 +234,8 @@ array = [1,2,3,4,5]
 
 Dlinkedlist = DoublyLinkedList()
 Dlinkedlist.createList(array)
+Dlinkedlist.printList()
 Dlinkedlist.insertAtLocation(6,6)
+Dlinkedlist.printList()
+Dlinkedlist.deleteAtLocation(2)
 Dlinkedlist.printList()
