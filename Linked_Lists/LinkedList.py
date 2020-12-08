@@ -174,10 +174,35 @@ class DoublyLinkedList:
         newNode.prev = temp
         
         return self.head
+    
+    def deleteAtLocation(self, index):
+        temp = self.head
+
+        count = self.countList()
+
+        if (count < index):
+            return temp
+
+    # Deleting the first node
+        if index == 1:
+            temp = temp.next
+            self.head = temp
+
+    # Deleting the last node
+        if count == index:
+            while temp.next is not None and temp.next.next is not None:
+                temp = temp.next
+                temp.next = None # deleted the last node
+                return self.head
+    
+        pointer = 1
+        while pointer < index - 1: 
+            temp = temp.next
+            pointer += 1
+        
+        prevNode
 
 
-
-           
 # Node structure to be: 5 => 1 => 3 => 7
 
 linked_list =LinkedList()
