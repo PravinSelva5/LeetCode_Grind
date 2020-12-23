@@ -1,6 +1,3 @@
-
-
-
 class Graph:
     def __init__(self, numberOfNodes):
         self.numberOfNodes = numberOfNodes + 1
@@ -18,7 +15,7 @@ class Graph:
         for i in range(self.numberOfNodes):
             for j in range(len(self.graph[i])):
                 if (self.graph[i][j]):
-                    print(i, "->", j )
+                    print(i, "->", j )ß
 
 g = Graph(5)
 
