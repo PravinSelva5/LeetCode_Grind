@@ -34,16 +34,23 @@ def inOrderTraversal(node):
 PRE-ORDER TRAVERSAL: Root/current node gets visited, then left node(s), then right node(s)
 '''
 
-def preorderTraversal(node):
+def preOrderTraversal(node):
     
     if node != None:
         print(node.data)
-        preorderTraversal(node.left)
-        preorderTraversal(node.right)
+        preOrderTraversal(node.left)
+        preOrderTraversal(node.right)
 
 '''
-PRE-ORDER TRAVERSAL: Root/current node gets visited, then left node(s), then right node(s)
+POST-ORDER TRAVERSAL: Visit Left subtree, visit right subtree, then root node
 '''
+
+def postOrderTraversal(node):
+
+    if node != None:
+        postOrderTraversal(node.left)
+        postOrderTraversal(node.right)
+        print(node.data)
 
 
 root   = Node(4)
@@ -55,4 +62,9 @@ root.left = node_5
 root.right = node_6
 node_5.left = node_7
 
+print("In-Order Traversal:")
 inOrderTraversal(root)
+print("Pre-Order Traversal:")
+preOrderTraversal(root)
+print("Post-Order Traversal:")
+postOrderTraversal(root)
